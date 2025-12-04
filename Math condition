@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+    int result;
+
+    printf("Enter a number: ");
+    scanf("%d", &x);
+
+    // Math expression: x^2 + x + 1
+    result = x*x + x + 1;
+
+    if (result > 100) {
+        printf("Condition satisfied! (%d^2 + %d + 1 = %d > 100)\n", x, x, result);
+    } else {
+        printf("Condition NOT satisfied. (%d^2 + %d + 1 = %d <= 100)\n", x, x, result);
+    }
+
+    return 0;
+}
